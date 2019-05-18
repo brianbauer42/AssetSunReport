@@ -1,7 +1,14 @@
 import React from "react";
+import logo from "./../sun.jpg";
+import "./Header.css";
 
 const Header: React.FC = () => {
-  return <h2>AssetSun</h2>;
+  return (
+    <div className="header">
+      <img src={logo} className="App-logo" alt="logo" />
+      <h1>AssetSun</h1>
+    </div>
+  );
 };
 
 export default Header;

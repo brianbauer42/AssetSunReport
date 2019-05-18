@@ -1,11 +1,19 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: local("Bebas Neue Regular"), url(./BebasNeue-Regular.woff) format("woff");
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2 {
+  font-family: "Bebas Neue Regular";
+}
+
+.App {
+  text-align: left;
+  margin: 20px;
+  padding: 20px;
+  border: 8px black solid;
+  border-radius: 8px;
 }
 
 .App-header {
