@@ -3,15 +3,27 @@
   src: local("Bebas Neue Regular"), url(./BebasNeue-Regular.woff) format("woff");
 }
 
-h1,
+@font-face {
+  font-family: "Comfortaa Bold";
+  src: local("Comfortaa Bold"), url(./Comfortaa-Bold.ttf) format("ttf");
+}
+
+h1 {
+  font-family: "Comfortaa Bold";
+}
+
 h2 {
   font-family: "Bebas Neue Regular";
+}
+
+.row-header {
+  font-weight: bold;
 }
 
 .App {
   text-align: left;
   margin: 20px;
-  padding: 20px;
+  padding: 40px;
   border: 4px black solid;
   border-radius: 8px;
 }

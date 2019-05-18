@@ -1,21 +1,33 @@
 import React from "react";
 
+let key = 0;
+
 const addHeaders = headings => {
+  console.log("HEADINGS", headings);
+  if (!headings) return;
   return (
     <tr>
-      {headings.forEach(header => {
-        return <td>{header}</td>;
+      {headings.map(header => {
+        return (
+          <td className="row-header" key={++key}>
+            {header}
+          </td>
+        );
       })}
     </tr>
   );
 };
 
 const addRows = rows => {
+  console.log("ROWS", rows);
+  if (!rows) return;
+
   return rows.map(row => {
     return (
-      <tr>
-        <td>{row.desctription}</td>
-        <td>{row.cost}</td>
+      <tr key={++key}>
+        {row.map(column => (
+          <td key={++key}>{column}</td>
+        ))}
       </tr>
     );
   });
@@ -23,8 +35,10 @@ const addRows = rows => {
 
 const DecisionTable = ({ headings, rows }) => (
   <table className="decisiontable">
-    {addHeaders(headings)}
-    {addRows(rows)}
+    <tbody>
+      {addHeaders(headings)}
+      {addRows(rows)}
+    </tbody>
   </table>
 );
 

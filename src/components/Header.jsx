@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./../sun.jpg";
 import "./Header.css";
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <div className="header">
       <img src={logo} className="App-logo" alt="logo" />
