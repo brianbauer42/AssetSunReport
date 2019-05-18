@@ -1,6 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import ExecutiveSummary from "./components/ExecutiveSummary";
+import PerformanceSummary from "./components/PerformanceSummary";
+import Header from "./components/Header";
+import Decisions from "./components/Decisions";
 
 const App: React.FC = () => {
   return (
@@ -19,8 +23,12 @@ const App: React.FC = () => {
           Learn React
         </a>
       </header>
+      <Header />
+      <ExecutiveSummary />
+      <PerformanceSummary />
+      <Decisions />
     </div>
   );
-}
+};
 
 export default App;
