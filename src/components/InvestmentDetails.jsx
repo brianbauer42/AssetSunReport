@@ -1,4 +1,5 @@
 import React from "react";
+import chart from "../valuebreakdown.png";
 
 const amount = {
   before: 5000000,
@@ -24,6 +25,7 @@ const InvestmentDetails = () => {
           </tr>
         </tablebody>
       </table>
+      <img src={chart} alt="value-breakdown" />
     </div>
   );
 };
