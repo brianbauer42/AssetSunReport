@@ -16,6 +16,10 @@ h2 {
   font-family: "Bebas Neue Regular";
 }
 
+.add-remove {
+  height: 1em;
+}
+
 .row-header {
   font-weight: bold;
 }

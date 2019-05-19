@@ -1,4 +1,6 @@
 import React from "react";
+import plus from "../greenplus.png";
+import minus from "../redminus.png";
 
 let key = 0;
 
@@ -28,6 +30,7 @@ const addRows = rows => {
         {row.map(column => (
           <td key={++key}>{column}</td>
         ))}
+        <img className="add-remove" src={plus} />
       </tr>
     );
   });
